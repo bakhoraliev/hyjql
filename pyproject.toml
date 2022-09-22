@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pyjql"
+version = "0.1.0"
+description = "Python JQL query builder inspired by pypika"
+authors = ["Ilkhomidin Bakhoraliev <bakhoraliev.ilkhomidin@proton.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
