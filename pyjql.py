@@ -53,6 +53,9 @@ class keyword:
     def __str__(self) -> str:
         return f"{self.__left} {self.__keyword} {self.__right}".strip()
 
+    def __repr__(self) -> str:
+        return self.__str__()
+
 
 class operator:
     """
