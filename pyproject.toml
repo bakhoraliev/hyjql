@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pyjql"
 version = "0.1.0"
-description = "Python JQL query builder inspired by pypika"
+description = "Python JQL query builder"
 authors = ["Ilkhomidin Bakhoraliev <bakhoraliev.ilkhomidin@proton.me>"]
 license = "MIT"
 readme = "README.md"
