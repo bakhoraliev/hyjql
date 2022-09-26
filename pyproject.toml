@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "jql"
+name = "hyjql"
 version = "0.1.0"
 description = "Hy[Python] JQL query builder"
 authors = ["Ilkhomidin Bakhoraliev <bakhoraliev.ilkhomidin@proton.me>"]
