@@ -21,7 +21,7 @@ From hy:
 (jql.format {:equals ["project" "Test"]})
 ;; project == "Test" and assignee == currentUser()
 (jql.format {:and [{:equals ["project" "Test"]}
-                     {:equals ["assignee" "currentUser()"]}]})
+                   {:equals ["assignee" "currentUser()"]}]})
 ```
 
 From Python:
