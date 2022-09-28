@@ -8,7 +8,7 @@
   "Returns a possibly empty seq of the items after the first. Calls seq on its
   argument."
   (let [seq (list coll)]
-    (get seq (slice 1 (len seq))))
+    (get seq (slice 1 (len seq)))))
 
 
 (defn format [data]
