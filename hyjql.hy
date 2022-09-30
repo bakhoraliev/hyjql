@@ -22,9 +22,16 @@
                      :is "IS"           :is-not "IS NOT"
                      :was "WAS"         :was-not "WAS NOT"
                      :was-in "WAS IN"   :was-not-in "WAS NOT IN"
-                     :changed "CHANGED"}
+                     :changed "CHANGED"})
 
 (defn format [data]
   "Turn the data DSL into a vector containing a JQL string followed by
   any parameter values that were encountered in the DSL structure."
-  ...)
+  (let [struct (.items data)
+        clause (first struct)
+        predicates (rest struct)
+        operator (first clause)
+        operands (second clause)
+        left (first operands)
+        right (second operands)]
+    f"{left} {(get operators-map operator)} {right}"))
