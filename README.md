@@ -47,3 +47,9 @@ Simply add `hyjql` as a dependency to your project:
 ```bash
 pip install hyjql
 ```
+
+## About JQL
+
+- [Get started with Advanced Search and JQL](https://www.atlassian.com/software/jira/guides/expand-jira/jql)
+- [What is advanced searching in Jira Cloud?](https://support.atlassian.com/jira-software-cloud/docs/what-is-advanced-searching-in-jira-cloud/)
+- [JQL Cheat Sheet](https://3kllhk1ibq34qk6sp3bhtox1-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/atlassian-jql-cheat-sheet-2.pdf)
