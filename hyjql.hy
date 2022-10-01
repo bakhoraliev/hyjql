@@ -1,3 +1,6 @@
+(import itertools [chain])
+(import functools [reduce])
+
 (defn first [coll]
   "Returns the first item in the collection. Calls list on its
   argument."
@@ -24,6 +27,10 @@
                      :was-in "WAS IN"   :was-not-in "WAS NOT IN"
                      :changed "CHANGED"})
 
+(defn format-predicates [predicates]
+  "Formats a list of predicates into a string suitable for clause."
+  (.join " " (map str (reduce chain [] predicates))))
+
 (defn format [data]
   "Turn the data DSL into a vector containing a JQL string followed by
   any parameter values that were encountered in the DSL structure."
@@ -34,4 +41,4 @@
         operands (second clause)
         left (first operands)
         right (second operands)]
-    f"{left} {(get operators-map operator)} {right}"))
+    f"{left} {(get operators-map operator)} {right} {(format-predicates predicates)}"))
