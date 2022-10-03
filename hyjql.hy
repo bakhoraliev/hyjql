@@ -1,6 +1,8 @@
 (import itertools [chain])
 (import functools [reduce])
 
+(setv __version__ "0.1.0")
+
 (defn first [coll]
   "Returns the first item in the collection. Calls list on its
   argument."
