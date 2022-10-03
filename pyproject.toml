@@ -13,6 +13,7 @@ python = "=3.10.6"
 [tool.poetry.group.dev.dependencies]
 ward = "^0.66.1b0"
 hy = "^0.24.0"
+black = "^22.8.0"
 
 
 [build-system]
